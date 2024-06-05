@@ -23,11 +23,11 @@ with open('data.json', 'r') as f:
 
 if 'flowmessages' not in st.session_state:
   st.session_state['flowmessages'] = [
-      SystemMessage(content="you are a helpful AI assistant")
+    SystemMessage(content="you are a helpful AI assistant")
   ]
 
 
-def get_gemini_answeres(question):
+def get_gemini_response(question):  # Corrected function name
   # Check for pre-defined answer in JSON data
   for item in data:
     if question.lower() in item.get('question', '').lower():
@@ -36,9 +36,9 @@ def get_gemini_answeres(question):
 
   # Fallback to Gemini model if no direct answer found
   st.session_state['flowmessages'].append(HumanMessage(content=question))
-  answeres = model.invoke(st.session_state['flowmessages'])
-  st.session_state['flowmessages'].append(AIMessage(content=answeres.content))
-  return answeres
+  response = model.invoke(st.session_state['flowmessages'])  # Use response instead of answeres
+  st.session_state['flowmessages'].append(AIMessage(content=response.content))
+  return response
 
 
 if 'chat_history' not in st.session_state:
@@ -51,12 +51,12 @@ submit = st.button("Ask the question")
 
 
 if submit and input:
-  answeres = get_gemini_answeres(input)
+  response = get_gemini_response(input)  # Use response instead of answeres
   st.session_state['chat_history'].append(("You", input))
-  st.subheader("The answeres is")
+  st.subheader("The Response is")  # Corrected typo
   # Optionally, display a label indicating the source of the answer
-  if answeres.content in [item.get('answer') for item in data]:
-    st.write(f"Pre-defined Answer: {answeres.content}")
+  if response.content in [item.get('answer') for item in data]:
+    st.write(f"Pre-defined Answer: {response.content}")
   else:
-    st.write(answeres.content)
-  st.session_state['chat_history'].append(("Bot", answeres))
+    st.write(response.content)
+  st.session_state['chat_history'].append(("Bot", response))
