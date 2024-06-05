@@ -59,4 +59,4 @@ if submit and input:
     st.write(f"Pre-defined Answer: {response.content}")
   else:
     st.write(response.content)
-  st.session_state['chat_history'].append(("Bot", response
+  st.session_state['chat_history'].append(("Bot", response)
