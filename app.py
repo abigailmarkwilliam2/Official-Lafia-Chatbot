@@ -18,7 +18,7 @@ st.set_page_config(page_title="Q&A Demo")
 st.header("Gemini LLM Application")
 
 # Load data from JSON file (replace 'your_data.json' with your actual filename)
-with open('your_data.json', 'r') as f:
+with open('data.json', 'r') as f:
   data = json.load(f)
 
 if 'flowmessages' not in st.session_state:
