@@ -41,4 +41,3 @@ def get_gemini_response(question):  # Corrected function name
   return response
 
 
-if 'chat_history' not in
