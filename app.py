@@ -30,7 +30,7 @@ if 'flowmessages' not in st.session_state:
 def get_gemini_response(question):  # Corrected function name
   # Check for pre-defined answer in JSON data
   for item in data:
-    if question.lower() in item.get('patterns', '').lower():
+    if question.lower() in item.get('patterns', []):
       answer = item.get('responses', 'Sorry, I can\'t answer that directly.')
       return AIMessage(content=answer)
 
@@ -41,22 +41,4 @@ def get_gemini_response(question):  # Corrected function name
   return response
 
 
-if 'chat_history' not in st.session_state:
-  st.session_state['chat_history'] = []
-
-
-input = st.text_input("Input: ", key="input")
-
-submit = st.button("Ask the question")
-
-
-if submit and input:
-  response = get_gemini_response(input)  # Use response instead of answeres
-  st.session_state['chat_history'].append(("You", input))
-  st.subheader("The Response is")  # Corrected typo
-  # Optionally, display a label indicating the source of the answer
-  if response.content in [item.get('responses', []) for item in data]:
-    st.write(f"Pre-defined Answer: {response.content}")
-  else:
-    st.write(response.content)
-  st.session_state['chat_history'].append(("Bot", response))
+if 'chat_history' not in
