@@ -15,7 +15,7 @@ model = ChatGoogleGenerativeAI(model="gemini-pro", convert_system_message_to_hum
 
 st.set_page_config(page_title="Q&A Demo")
 
-st.header("Gemini LLM Application")
+st.header("LAFIA")
 
 if 'flowmessages' not in st.session_state:
     st.session_state['flowmessages']=[
