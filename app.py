@@ -1,4 +1,7 @@
 ## Conversational Q&A Chatbot with session knowledge
+import json
+with open('data.json', 'r') as f:
+  data = json.load(f)
 from dotenv import load_dotenv
 load_dotenv()
 import streamlit as st
@@ -23,31 +26,18 @@ if 'flowmessages' not in st.session_state:
     ]
 
 def get_gemini_response(question):
+  # Access loaded data (assuming data is a dictionary)
+  relevant_info = None
+  for key, value in data.items():
+    if key.lower() in question.lower():  # Check for keyword match
+      relevant_info = value
+      break
 
-    st.session_state['flowmessages'].append(HumanMessage(content=question))
-    response=model.invoke(st.session_state['flowmessages'])
-    st.session_state['flowmessages'].append(AIMessage(content=response.content))    
-    return response
+  # Update conversation history and call model
+  # ... (existing code)
 
-if 'chat_history' not in st.session_state:
-    st.session_state['chat_history'] = []
-
-
-input=st.text_input("Input: ",key="input")
-#response=get_gemini_response(input)
-
-submit=st.button("Send")
-
-
-if submit and input:
-    response=get_gemini_response(input)
-    st.session_state['chat_history'].append(("You", input))
-    st.subheader("The Response is")
-    st.write(response.content)
-    st.session_state['chat_history'].append(("Bot", response.content))
-
-st.subheader("Your Chat History:")
-    
-for role, text in st.session_state['chat_history']:
-    st.write(f"{role}: {text}")
+  # If relevant info found, use it to enhance response
+  if relevant_info:
+    response.content += f" (Additional information: {relevant_info})"
+  return response
     
