@@ -36,7 +36,7 @@ if 'chat_history' not in st.session_state:
 input=st.text_input("Input: ",key="input")
 #response=get_gemini_response(input)
 
-submit=st.button("Ask the question")
+submit=st.button("Send")
 
 
 if submit and input:
@@ -46,7 +46,7 @@ if submit and input:
     st.write(response.content)
     st.session_state['chat_history'].append(("Bot", response.content))
 
-st.subheader("The Chat History is")
+st.subheader("Your Chat History:")
     
 for role, text in st.session_state['chat_history']:
     st.write(f"{role}: {text}")
