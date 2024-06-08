@@ -4,7 +4,6 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
-submit = st.button("Go back")  # Create a button to submit the 
 
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
