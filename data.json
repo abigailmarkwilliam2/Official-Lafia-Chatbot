@@ -27,10 +27,7 @@
    "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
    "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
   },
-  {"tag": "no-response",
-      "patterns": [""],
-      "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
-  },
+  
   {"tag": "neutral-response",
       "patterns": ["nothing much"],
       "responses": ["Oh I see. Do you want to talk about something?"]
