@@ -5,6 +5,24 @@ import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
 
+import tkinter as tk
+import webbrowser
+
+def open_link():
+    link = "https://conversational-ai-fnyvijrpfdnotxcy5uksrd.streamlit.app/#gemini-llm-application"
+    webbrowser.open(link)
+
+root = tk.Tk()
+root.title("Open Link")
+
+button = tk.Button(root, text="Open Link", command=open_link)
+button.pack(pady=20)
+
+root.mainloop()
+
+
+
+
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
