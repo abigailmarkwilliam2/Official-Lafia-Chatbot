@@ -39,6 +39,5 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
 
-<button onclick="window.location.href='file:///C:/Users/ILIMI/OneDrive%20-%20ILIMI,%20The%20African%20Development%20University/Ezekiel%20Issa/Ezekiel%20Issa/templatemo_587_tiya_golf_club/index.html'">Go Back</button>
 
 
