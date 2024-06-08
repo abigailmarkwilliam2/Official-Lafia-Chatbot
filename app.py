@@ -13,6 +13,7 @@ if 'chat_history' not in st.session_state:  # Check if 'chat_history' key exists
     st.session_state['chat_history'] = []  # If not, initialize it as an empty list
 
 st.set_page_config(page_title="Lafia Chatbot")  # Set the page title
+st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
 st.header("Welcome to LAFIA:")  # Display a header
 st.subheader("Your Personal Home Doctor")  # Display a subheader
 
@@ -37,5 +38,4 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
 
-st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
 
