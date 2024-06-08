@@ -4,9 +4,6 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
-st.link_button("Go back")
-
-
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
