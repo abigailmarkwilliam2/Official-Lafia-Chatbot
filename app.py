@@ -4,11 +4,12 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
+st.button("Go back")  # Create a button to submit the 
+
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
 
-st.button("Go back")  # Create a button to submit the 
 
 # Initialize the 'chat_history' session state if it doesn't exist
 if 'chat_history' not in st.session_state:  # Check if 'chat_history' key exists in session state
