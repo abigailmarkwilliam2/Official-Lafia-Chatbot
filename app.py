@@ -31,7 +31,7 @@ if 'flowmessages' not in st.session_state:
   ]
 
 
-def get_gemini_response(question):  # Corrected function name
+def get_gemini_response(patterns):  # Corrected function name
   # Check for pre-defined answer in JSON data
   for item in data:
     if question.lower() in item.get('patterns', []):
