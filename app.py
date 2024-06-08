@@ -4,9 +4,9 @@ load_dotenv()
 import streamlit as st
 import os
 
-# Load data from a JSON file
+# Load data from the JSON file
 with open('data.json', 'r') as f:
-    data = json.load(f)
+    data = json.load(f)['intents']
 
 # Initialize the 'chat_history' session state if it doesn't exist
 if 'chat_history' not in st.session_state:
@@ -22,9 +22,9 @@ submit = st.button("Ask the question")
 if submit and input:
     question = input.lower()
     answer_found = False
-    for item in data:
-        if question in item.get('patterns', []):
-            answer = item.get('responses', ['Sorry, I can\'t answer that directly.'])[0]
+    for intent in data:
+        if any(pattern.lower() in question for pattern in intent['patterns']):
+            answer = intent['responses'][0]
             st.subheader("The Response is")
             st.write(answer)
             st.session_state['chat_history'].append(("You", input))
