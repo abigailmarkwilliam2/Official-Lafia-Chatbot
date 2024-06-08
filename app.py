@@ -23,8 +23,8 @@ if submit and input:  # Check if the button is clicked and the input is not empt
     question = input.lower()  # Convert the user input to lowercase
     answer_found = False  # Initialize a flag to track if an answer is found
     for intents in data:  # Loop through each intent in the data
-        if any(pattern.lower() in question for pattern in intent['patterns']):  # Check if any pattern matches the user input
-            answer = intent['responses'][0]  # Get the first response from the matching intent
+        if any(pattern.lower() in question for pattern in intents['patterns']):  # Check if any pattern matches the user input
+            answer = intents['responses'][0]  # Get the first response from the matching intent
             st.subheader("The Response is")  # Display a subheader
             st.write(answer)  # Display the response
             st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
