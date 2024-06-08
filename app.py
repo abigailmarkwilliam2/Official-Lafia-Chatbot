@@ -6,8 +6,6 @@ import os  # Import the os module for interacting with the operating system
 
 st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
 
-st.link_button("Go to gallery", "https://streamlit.io/gallery")
-
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
