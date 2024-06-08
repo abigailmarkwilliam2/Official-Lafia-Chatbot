@@ -36,3 +36,19 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.write("Sorry, I can't answer that directly.")  # Display a default response
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
+
+import tkinter as tk
+import webbrowser
+
+def open_url():
+    url = "file:///C:/Users/ILIMI/OneDrive%20-%20ILIMI,%20The%20African%20Development%20University/Ezekiel%20Issa/Ezekiel%20Issa/templatemo_587_tiya_golf_club/index.html"
+    webbrowser.open(url)
+
+root = tk.Tk()
+root.title("Open URL")
+
+button = tk.Button(root, text="Go Back", command=open_url)
+button.pack(pady=20)
+
+root.mainloop()
+
