@@ -21,15 +21,17 @@ submit = st.button("Ask the question")
 
 if submit and input:
     question = input.lower()
+    answer_found = False
     for item in data:
         if question in item.get('patterns', []):
-            answer = item.get('responses', 'Sorry, I can\'t answer that directly.')
+            answer = item.get('responses', ['Sorry, I can\'t answer that directly.'])[0]
             st.subheader("The Response is")
             st.write(answer)
             st.session_state['chat_history'].append(("You", input))
             st.session_state['chat_history'].append(("Bot", answer))
+            answer_found = True
             break
-    else:
+    if not answer_found:
         st.subheader("The Response is")
         st.write("Sorry, I can't answer that directly.")
         st.session_state['chat_history'].append(("You", input))
