@@ -4,6 +4,10 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
+st.link_button("Go to gallery", "file:///C:/Users/ILIMI/OneDrive%20-%20ILIMI,%20The%20African%20Development%20University/Ezekiel%20Issa/Ezekiel%20Issa/templatemo_587_tiya_golf_club/index.html")
+
+st.link_button("Go to gallery", "https://streamlit.io/gallery")
+
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
