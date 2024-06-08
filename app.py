@@ -5,30 +5,18 @@ import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
 
-import sys
 
-from PyQt5.QtCore import QUrl
-from PyQt5.QtGui import QDesktopServices
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.initUI()
+import webbrowser
 
-    def initUI(self):
-        btn = QPushButton("Open Link", self)
-        btn.move(30, 30)
-        btn.clicked.connect(self.open_link)
+def open_link():
+    link = "https://conversational-ai-fnyvijrpfdnotxcy5uksrd.streamlit.app/#gemini-llm-application"
+    webbrowser.open(link)
 
-    def open_link(self):
-        link = "https://conversational-ai-fnyvijrpfdnotxcy5uksrd.streamlit.app/#gemini-llm-application"
-        QDesktopServices.openUrl(QUrl(link))
+st.title("Open Link")
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    sys.exit(app.exec_())
+if st.button("Open Link"):
+    open_link()
 
 
 
