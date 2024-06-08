@@ -18,7 +18,7 @@ st.set_page_config(page_title="Lafia Chatbot", page_icon=":robot_face:", layout=
 page_bg_color = """
 <style>
 body {
-background-color: #F5F5F5;
+background-color: #darkblue;
 }
 </style>
 """
@@ -28,13 +28,13 @@ st.markdown(page_bg_color, unsafe_allow_html=True)
 header_style = """
 <style>
 h1 {
-    color: #4285F4;
+    color: #black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: center;
 }
 h2 {
-    color: #EA4335;
+    color: #black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -65,7 +65,7 @@ input = st.text_input("Input: ", key="input")  # Create a text input field for u
 button_style = """
 <style>
 .stButton > button {
-    background-color: #4285F4;
+    background-color: #blue;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
