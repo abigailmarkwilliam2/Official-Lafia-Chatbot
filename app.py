@@ -4,8 +4,6 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
-st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
-
 # Load data from the JSON file
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
@@ -38,3 +36,6 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.write("Sorry, I can't answer that directly.")  # Display a default response
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
+
+st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
+
