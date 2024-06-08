@@ -4,22 +4,7 @@ load_dotenv()  # Load environment variables from the .env file
 import streamlit as st  # Import the Streamlit library for building the web app
 import os  # Import the os module for interacting with the operating system
 
-
-
-
-import webbrowser
-
-def open_link():
-    link = "https://conversational-ai-fnyvijrpfdnotxcy5uksrd.streamlit.app/#gemini-llm-application"
-    webbrowser.open(link)
-
-st.title("Open Link")
-
-if st.button("Open Link"):
-    open_link()
-
-
-
+st.link_button("Go back", "file:///C:/Users/ILIMI/OneDrive%20-%20ILIMI,%20The%20African%20Development%20University/Ezekiel%20Issa/Ezekiel%20Issa/templatemo_587_tiya_golf_club/index.html")
 
 
 # Load data from the JSON file
