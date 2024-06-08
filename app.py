@@ -13,9 +13,9 @@ genai.configure(api_key=os.getenv("AIzaSyCuZS6XSXH8w3CP62I4QlMu_j2pDwq0CMY"))
 model = ChatGoogleGenerativeAI(model="gemini-pro", convert_system_message_to_human=True)
 
 
-st.set_page_config(page_title="Q&A Demo")
+st.set_page_config(page_title="Lafia Chatbot")
 
-st.header("Gemini LLM Application")
+st.header("LAFIA:")
 
 # Load data from JSON file (replace 'your_data.json' with your actual filename)
 with open('data.json', 'r') as f:
