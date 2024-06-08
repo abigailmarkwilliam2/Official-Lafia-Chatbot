@@ -11,6 +11,12 @@
       "patterns": ["Good afternoon"],
       "responses": ["Good afternoon. How is your day going?"]
   },
+
+    {"tag": "love",
+      "patterns": ["do you love me?"],
+      "responses": ["Sorry I'm a robot, i don't have feelings"]
+  },
+   
   {"tag": "evening",
       "patterns": ["Good evening"],
       "responses": ["Good evening. How has your day been?"]
