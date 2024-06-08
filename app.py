@@ -8,7 +8,6 @@ import os  # Import the os module for interacting with the operating system
 with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
     data = json.load(f)['intents']  # Load the JSON data and access the 'intents' key
 
-
 # Initialize the 'chat_history' session state if it doesn't exist
 if 'chat_history' not in st.session_state:  # Check if 'chat_history' key exists in session state
     st.session_state['chat_history'] = []  # If not, initialize it as an empty list
@@ -37,6 +36,3 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.write("Sorry, I can't answer that directly.")  # Display a default response
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
-
-
-
