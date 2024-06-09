@@ -13,7 +13,7 @@
   },
 
     {"tag": "love",
-      "patterns": ["do you love me?"],
+      "patterns": ["do you love me?", "i love you"],
       "responses": ["Sorry I'm a robot, i don't have feelings"]
   },
    
