@@ -543,15 +543,6 @@
        "patterns": ["How do you treat a Fracture?", "what to do if i get a Fracture?", "Which medicine to take if I have a Fracture?", "How to cure a Fracture?"],
        "responses": ["1)Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. 2)Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. If you've been trained in how to splint and professional help isn't readily available, apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort. 3)Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin. Wrap the ice in a towel, piece of cloth or some other material. 4)Treat for shock. If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, if possible, elevate the legs."],
       }
-   {
-    "tag": "Choking",
-    "patterns": ["What to do if someone is choking?", "How to help a choking person?", "Steps to take when someone is choking?", "How to perform the Heimlich maneuver?"],
-    "responses": ["1) Ask the person if they are choking. If they cannot speak, cough, or breathe, proceed with the Heimlich maneuver. 2) Stand behind the person and wrap your arms around their waist. 3) Make a fist with one hand and place it just above the person's navel. 4) Grasp the fist with your other hand and perform quick, upward thrusts into the abdomen until the object is expelled or the person becomes unconscious. 5) If the person becomes unconscious, begin CPR and call for emergency services. 6) In remote areas, continue efforts to clear the airway while seeking help from the nearest medical facility."],
-  },
-  {
-    "tag": "Heat Stroke",
-    "patterns": ["What to do for heat stroke?", "How to treat heat stroke?", "Signs of heat stroke?", "First aid for heat stroke?"],
-    "responses": ["1) Move the person to a cooler place, preferably indoors or into the shade. 2) Remove excess clothing and apply cool water to the skin. Use a fan or sponge to cool them down. 3) Have the person drink cool water or oral rehydration salts if they are conscious and able to drink. 4) Seek immediate medical attention if the person shows signs of confusion, fainting, or seizures. 5) In regions with limited medical access, focus on cooling the person and rehydration while arranging for transport to the nearest healthcare facility."],
-  }
+   
 ]
 }
