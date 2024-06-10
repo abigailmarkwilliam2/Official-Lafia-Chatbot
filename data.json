@@ -552,46 +552,6 @@
     "tag": "Heat Stroke",
     "patterns": ["What to do for heat stroke?", "How to treat heat stroke?", "Signs of heat stroke?", "First aid for heat stroke?"],
     "responses": ["1) Move the person to a cooler place, preferably indoors or into the shade. 2) Remove excess clothing and apply cool water to the skin. Use a fan or sponge to cool them down. 3) Have the person drink cool water or oral rehydration salts if they are conscious and able to drink. 4) Seek immediate medical attention if the person shows signs of confusion, fainting, or seizures. 5) In regions with limited medical access, focus on cooling the person and rehydration while arranging for transport to the nearest healthcare facility."],
-  },
-  {
-    "tag": "Malaria",
-    "patterns": ["What are the symptoms of malaria?", "How to treat malaria?", "Malaria prevention tips?", "What to do if someone has malaria?"],
-    "responses": ["1) Common symptoms of malaria include fever, chills, headache, nausea, and muscle pain. 2) If you suspect malaria, seek medical attention immediately for proper diagnosis and treatment. 3) Use insect repellent, sleep under insecticide-treated bed nets, and take antimalarial medication as preventive measures. 4) Ensure the person stays hydrated and follows the prescribed treatment regimen to recover fully. 5) In remote areas, make use of local health posts and community health workers for diagnosis and treatment."],
   }
-   {
-    "tag": "Heat Stroke",
-    "patterns": ["What to do for heat stroke?", "How to treat heat stroke?", "Signs of heat stroke?", "First aid for heat stroke?"],
-    "responses": ["1) Move the person to a cooler place, preferably indoors or into the shade. 2) Remove excess clothing and apply cool water to the skin. Use a fan or sponge to cool them down. 3) Have the person drink cool water or oral rehydration salts if they are conscious and able to drink. 4) Seek immediate medical attention if the person shows signs of confusion, fainting, or seizures. 5) In regions with limited medical access, focus on cooling the person and rehydration while arranging for transport to the nearest healthcare facility."],
- 
-  },
-  {
-    "tag": "Malaria",
-    "patterns": ["What are the symptoms of malaria?", "How to treat malaria?", "Malaria prevention tips?", "What to do if someone has malaria?"],
-    "responses": ["1) Common symptoms of malaria include fever, chills, headache, nausea, and muscle pain. 2) If you suspect malaria, seek medical attention immediately for proper diagnosis and treatment. 3) Use insect repellent, sleep under insecticide-treated bed nets, and take antimalarial medication as preventive measures. 4) Ensure the person stays hydrated and follows the prescribed treatment regimen to recover fully. 5) In remote areas, make use of local health posts and community health workers for diagnosis and treatment."],
-    
-  },
-  {
-    "tag": "Snake Bite",
-    "patterns": ["What to do if bitten by a snake?", "How to treat a snake bite?", "First aid for snake bite?", "Snake bite treatment steps?"],
-    "responses": ["1) Remain calm and move away from the snake. 2) Keep the affected limb immobilized and at or slightly below the level of the heart. 3) Remove any tight clothing or jewelry near the bite area to accommodate swelling. 4) Clean the bite area with soap and water. 5) Do not attempt to suck out the venom or apply ice to the bite. 6) Seek medical attention immediately. In remote areas, transport the person to the nearest health facility as quickly as possible."],
-   
-  },
-  {
-    "tag": "Dehydration",
-    "patterns": ["What are the signs of dehydration?", "How to treat dehydration?", "Dehydration first aid?", "Preventing dehydration?"],
-    "responses": ["1) Signs of dehydration include dry mouth, extreme thirst, dark yellow urine, dizziness, and confusion. 2) Treat dehydration by drinking plenty of fluids such as water, oral rehydration salts (ORS), or sports drinks. 3) Avoid drinks with caffeine or alcohol as they can worsen dehydration. 4) For severe dehydration, especially in children and the elderly, seek medical attention immediately. 5) To prevent dehydration, drink water regularly, especially in hot weather or during physical activity."],
-   
-  },
-  {
-    "tag": "Diarrhea",
-    "patterns": ["How to treat diarrhea?", "What to do for diarrhea?", "Diarrhea first aid?", "Managing diarrhea?"],
-    "responses": ["1) Drink plenty of fluids to stay hydrated. Oral rehydration salts (ORS) are particularly effective. 2) Avoid dairy products, fatty foods, and caffeine until symptoms improve. 3) If diarrhea is accompanied by a fever, bloody stools, or severe abdominal pain, seek medical attention immediately. 4) For young children and the elderly, monitor for signs of dehydration and seek medical help if necessary. 5) In areas with limited medical access, use boiled or bottled water to mix ORS and maintain good hygiene to prevent further infection."],
-    
-  },
-  {
-    "tag": "Cuts and Scrapes",
-    "patterns": ["How to treat a cut?", "First aid for cuts and scrapes?", "What to do for a scrape?", "How to care for a wound?"],
-    "responses": ["1) Wash your hands before touching the wound. 2) Clean the wound with clean water to remove dirt and debris. 3) Apply an antiseptic to prevent infection. 4) Cover the wound with a sterile bandage or clean cloth. 5) If the cut is deep, or if you cannot stop the bleeding, seek medical attention. 6) In remote areas, ensure the wound is kept clean and dry to prevent infection until you can access medical care."],
-  }
- ]
+]
 }
