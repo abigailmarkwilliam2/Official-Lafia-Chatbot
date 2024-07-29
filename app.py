@@ -38,4 +38,13 @@ if submit and input:  # Check if the button is clicked and the input is not empt
         st.session_state['chat_history'].append(("You", input))  # Add the user input to the chat history
         st.session_state['chat_history'].append(("Bot", "Sorry, I can't answer that directly."))  # Add the default response to the chat history
 
+# Display Chat History (after the submit button logic)
+if submit and input:
+    # ... existing logic for finding and displaying answer ...
+
+    st.subheader("Chat History:")  # Display chat history header
+    for message in st.session_state['chat_history']:
+        who, what = message  # Unpack message tuple (You/Bot, content)
+        st.write(f"{who}: {what}")  # Display each message with proper formatting
+
 
