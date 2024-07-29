@@ -12,13 +12,6 @@ with open('data.json', 'r') as f:  # Open the 'data.json' file in read mode
 if 'chat_history' not in st.session_state:  # Check if 'chat_history' key exists in session state
     st.session_state['chat_history'] = []  # If not, initialize it as an empty list
 
-# Sidebar for chat history
-with st.sidebar:
-    st.header("Chat History")
-    for message in chat_history:
-        who, text = message
-        st.write(f"{who}: {text}")
-
 st.set_page_config(page_title="Lafia Chatbot")  # Set the page title
 st.link_button("Go Back", "https://abigailmarkwilliam2.github.io/Lafia-Website/")
 st.header("Welcome to LAFIA:")  # Display a header
